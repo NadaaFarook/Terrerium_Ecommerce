@@ -1,0 +1,153 @@
+:root {
+  --main-color: #2d8859;
+  --light: #f2f0e4;
+  --dark: #0d0d0d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* loader css */
+
+.loader {
+  border: 20px solid var(--main-color);
+  border-top: 16px solid var(--light); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-color);
+  color: var(--light);
+  position: sticky;
+  top: 0;
+}
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.Toast {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffaeae;
+  padding: 10px;
+  margin: 10px;
+}
+
+.product {
+  margin: 10px;
+  width: 180px;
+  height: 230px;
+}
+.product button {
+  padding: 5px 7px;
+  margin: 5px;
+  color: #ffffff;
+  background-color: #2d8859;
+  border: 0px;
+  border-radius: 2px;
+}
+.out_of_stock {
+  background-color: rgba(39, 39, 39, 0.137);
+}
+
+.product img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+/*Basic Utility Classes*/
+.flex {
+  display: flex;
+}
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.m-1 {
+  margin: 10px;
+}
+.m-2 {
+  margin: 20px;
+}
+.center {
+  text-align: center;
+}
+/* 
+button{
+  padding: 0 20px;
+    
+    margin: 5px 10px;
+    font-size: 20px;
+} */
+.cart-card {
+  border: 1px solid grey;
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+}
+.Cart {
+  display: flex;
+}
+.cart-card h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.cart-card h3 {
+  font-size: 16px;
+}
+.cart-card p {
+  font-size: 16px;
+  color: gray;
+}
+.cart-card button {
+  padding: 0 1rem;
+  margin: 0 1rem;
+  border: 2px solid #2d8859;
+}
+.cart-card img {
+  width: 200px;
+  padding: 0 1rem 0 0;
+}
+.price_card {
+  height: fit-content;
+  padding: 1rem;
+  border: 1px solid #2d8859;
+  font-size: 25px;
+  margin: 1rem;
+  width: 600px;
+  position: sticky;
+  right: 0;
+  top: 5rem;
+}
+
+.box-basic{
+  margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #2d8859;
+    height: fit-content;
+}
+.Filters{
+  position: sticky;
+    top: 5rem;
+}
